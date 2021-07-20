@@ -68,7 +68,31 @@ const listTherapists = () => (
               <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
                   rel="stylesheet" />
               <div className="container">
+              
                   <h2 style={{margin:'0 20px'}} className="listTherapist-title">Therapist Lists</h2>
+                  <div className="container" style={{backgroundColor:"#"}}>
+    <div className="row " style={{backgroundColor:""}}>
+      <div className="col-12 col-md-10 col-lg-8 " style={{marginLeft:'42px'}}>
+        <form className="card ">
+          <div className="card-body row no-gutters ">
+            <div className="col-auto">
+              <i className="fas fa-search  text-body"></i>
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col">
+              <input className="form-control form-control form-control-borderless" type="search" placeholder="Search Therapist " />
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col-auto">
+              <button className="btn btn-success" type="submit">Search</button>
+            </div>
+            {/* <!--end of col--> */}
+          </div>
+        </form>
+      </div>
+      {/* <!--end of col--> */}
+    </div>
+  </div>
                   <div className="row">
                       <div className="col-lg-12">
                           <div className="main-box clearfix">

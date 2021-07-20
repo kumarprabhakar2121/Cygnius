@@ -72,6 +72,29 @@ const NotesSharedByTherapists = () =>(
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <div className="page-content container note-has-grid" style={{margin:'40px 30px'}}>
         <h3>All shared Notes By Therapists</h3>
+        <div className="container" style={{backgroundColor:"#"}}>
+    <div className="row " style={{backgroundColor:""}}>
+      <div className="col-12 col-md-10 col-lg-8 " style={{marginLeft:'42px'}}>
+        <form className="card ">
+          <div className="card-body row no-gutters ">
+            <div className="col-auto">
+              <i className="fas fa-search  text-body"></i>
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col">
+              <input className="form-control form-control form-control-borderless" type="search" placeholder="Search in Notes" />
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col-auto">
+              <button className="btn btn-success" type="submit">Search</button>
+            </div>
+            {/* <!--end of col--> */}
+          </div>
+        </form>
+      </div>
+      {/* <!--end of col--> */}
+    </div>
+  </div>
         <div className="tab-content bg-transparent">
             <div id="note-full-container" className="note-has-grid row">
             <div className="col-md-4 single-note-item all-category">

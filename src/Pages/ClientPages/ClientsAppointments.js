@@ -97,22 +97,20 @@ const ClientsAppointments = () =>(
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Booking Date:</span>
                       <span className="bg-light-blue">02.03.2020</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
                     
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Time :</span>
                       <span className="bg-light-blue">12:00 - 01:00 PM</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
                     
-                    <a href="#" className="btn-gray">Send Message</a>
+                    <Link to="./Messages" className="btn-gray">Send Message</Link>
                   </div>
                 </div>
                 <div className="buttons-to-right ">
@@ -131,24 +129,22 @@ const ClientsAppointments = () =>(
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Booking Date:</span>
                       <span className="bg-light-green">06.03.2020 - 07.03.2020</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
                     
                     
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Time :</span>
                       <span className="bg-light-blue">12:00 - 01:00 PM</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
                     
                     
-                    <a href="#" className="btn-gray">Send Message</a>
+                    <Link to="./Messages" className="btn-gray">Send Message</Link>
                   </div>
                 </div>
                 <div className="buttons-to-right">
@@ -166,24 +162,22 @@ const ClientsAppointments = () =>(
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Booking Date:</span>
                       <span className="btn-gray">20.03.2020 - 24.03.2020</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
 
 
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Time :</span>
                       <span className="bg-light-blue">12:00 - 01:00 PM</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                       
                     </div>
                     
-                    <a href="#" className="btn-gray">Send Message</a>
+                    <Link to="./Messages" className="btn-gray">Send Message</Link>
                     
                     <br></br>
                   </div>
@@ -199,27 +193,22 @@ const ClientsAppointments = () =>(
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Booking Date:</span>
                       <span className="btn-gray">20.03.2020 - 24.03.2020</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
                     </div>
 
 
                     <div className="mb-3">
                       <span className="mr-2 d-block d-sm-inline-block mb-2 mb-sm-0">Time :</span>
                       <span className="bg-light-blue">12:00 - 01:00 PM</span>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
-                      <a href="#">
-                      <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
-
-                      </a>
+                      <Link to="./AddAppointment">
+                      <i class="fa fa-edit " aria-hidden="true"></i>
+                      </Link>
+                      
                     </div>
                     
-                    <a href="#" className="btn-gray">Send Message</a>
+                    <Link to="./Messages" className="btn-gray">Send Message</Link>
                     
                     <br></br>
                   </div>

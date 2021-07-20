@@ -72,7 +72,7 @@ const MyJournals = () =>(
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
   <div className="container" style={{backgroundColor:"#"}}>
-  <h2>my journals list page for Client</h2>
+  <h2>my journals list </h2>
     <br />
     <div className="row " style={{backgroundColor:""}}>
       <div className="col-12 col-md-10 col-lg-8 " style={{marginLeft:'42px'}}>
@@ -101,8 +101,8 @@ const MyJournals = () =>(
   
     <div className="col-lg-9 mt-4 mt-lg-0">
     <div class="container col-sm-12">
-    <button type="button" class="btn btn-success proceed-btn">Add new Journal</button>
-    <button type="button" class="btn btn-success proceed-btn">See Journal Access Requests</button>
+    <button type="button" class="btn btn-outline-warning proceed-btn " ><Link to="./AddNewJournal">Add new Journal</Link></button>
+    <button type="button" class="btn btn-outline-warning proceed-btn"><Link to="./JournalAccessRequestsList">See Journal Access Requests</Link></button>
   </div>
       <div className="row">
         <div className="col-md-12">
@@ -131,7 +131,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -150,7 +150,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -169,7 +169,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -188,7 +188,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -207,7 +207,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -226,7 +226,7 @@ const MyJournals = () =>(
                   <td>
                   <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>
@@ -247,7 +247,7 @@ const MyJournals = () =>(
                   <td>
                     <ul className="list-unstyled mb-0 d-flex justify-content-end">
                       <li><a href="#" className="text-primary list-journal-icon" data-toggle="modal" data-target="#exampleModal6"><i className="far fa-eye "></i></a></li>
-                      <li><a href="#" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></a></li>
+                      <li><Link to="./AddNewJournal" className="text-info list-journal-icon" data-toggle="tooltip" title="" data-original-title="Edit"><i className="fas fa-pencil-alt "></i></Link></li>
                       <li><a href="#" className="text-danger list-journal-icon" data-toggle="modal" data-target="#exampleModal5"><i className="far fa-trash-alt "></i></a></li>
                     </ul>
                   </td>

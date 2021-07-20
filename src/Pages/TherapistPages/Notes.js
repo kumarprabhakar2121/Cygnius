@@ -75,11 +75,47 @@ const Notes =() =>(
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <div className="page-content container note-has-grid" style={{margin:'40px 30px'}}>
-        <h3>every Notes of Therapists</h3>
+        <h3> Therapists Notes  </h3>
+        <div className="container" style={{backgroundColor:"#"}}>
+    <div className="row " style={{backgroundColor:""}}>
+      <div className="col-12 col-md-10 col-lg-8 " style={{marginLeft:'42px'}}>
+        <form className="card ">
+          <div className="card-body row no-gutters ">
+            <div className="col-auto">
+              <i className="fas fa-search  text-body"></i>
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col">
+              <input className="form-control form-control form-control-borderless" type="search" placeholder="Search in Journals" />
+            </div>
+            {/* <!--end of col--> */}
+            <div className="col-auto">
+              <button className="btn btn-success" type="submit">Search</button>
+            </div>
+            {/* <!--end of col--> */}
+          </div>
+        </form>
+      </div>
+      {/* <!--end of col--> */}
+    </div>
+  </div>
         <div className="tab-content bg-transparent">
             <div id="note-full-container" className="note-has-grid row">
-            <button type="button" className="btn btn-lg btn-outline-success" data-toggle="modal" data-target="#exampleModal">ADD NEW NOTE</button>
-            <div className="col-md-4 single-note-item all-category">
+            <div className="col-md-4 single-note-item all-category bg-outline-success">
+                    <div className="card card-body btn-outline-success addnewnote" data-toggle="modal" data-target="#exampleModal">
+                       
+                       {/* <a href="#" className="fa-icons">
+                        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                        </a> */}
+                           ADD NEW NOTE 
+                       
+                        
+                        <div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4 single-note-item all-category">
                     <div className="card card-body">
                         <span className="side-stick"></span>
                         <h5 className="note-title text-truncate w-75 mb-0" data-noteheading="Try to do Yoga every weekend">Try to do Yoga every weekend</h5>
@@ -92,14 +128,14 @@ const Notes =() =>(
                                 Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.</p>
                         </div>
                         <div>
-                        <a href="#" className="fa-icons">edit
-                        <i class="fa fa-pencil " aria-hidden="true"></i>
-                    </a>
-                    <a href="#" className="fa-icons">
+                        <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                         </a>
+                    <a href="#" className="fa-icons" >
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -126,7 +162,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -153,7 +189,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -180,7 +216,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -207,7 +243,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -234,7 +270,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -261,7 +297,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -288,34 +324,7 @@ const Notes =() =>(
                         <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
 
                     </a>
-                    <a href="#" className="fa-icons">
-                        <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
-
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-4 single-note-item all-category">
-                    <div className="card card-body">
-                        <span className="side-stick"></span>
-                        <h5 className="note-title text-truncate w-75 mb-0" data-noteheading="Try to do Yoga every weekend">Try to do Yoga every weekend</h5>
-                        <p className="note-date font-12 text-muted">11 March 2021 08:30 PM</p>
-                        <p className="note-date font-12 text-muted">For Dr. John Doe</p>
-
-                        <div className="note-content">
-                            <p className="note-inner-content text-muted"
-                                data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.</p>
-                        </div>
-                        <div>
-                        <a href="#" className="fa-icons">
-                        <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" className="fa-icons">
-                        <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
-
-                    </a>
-                    <a href="#" className="fa-icons">
+                    <a href="#" className="fa-icons" data-toggle="modal" data-target="#exampleModal10">
                         <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 
                     </a>
@@ -371,6 +380,37 @@ const Notes =() =>(
   </div>
 </div>
 
+
+{/* delete confirmation */}
+
+{/* <!-- Modal --> */}
+<div className="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">DELETE NOTES</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+
+        <form action="/action_page.php">
+        
+  
+  <br/><br/>
+  <button type="button" className="btn btn-outline-danger btn-block modal-btn">Yes, Delete Note
+	</button>
+   
+    
+</form>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-grey" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </div>

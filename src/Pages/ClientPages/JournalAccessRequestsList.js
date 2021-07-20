@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 
 
-const AddNewJournal = () =>{
+const JournalAccessRequestsList = () =>{
 return(
-
 <div>
 
 
@@ -72,97 +71,72 @@ return(
             <div className="container-fluid">
 
 
+<div className="row">
+      <div className="col-md-12">
+        <div className="card card-white mb-5">
+          <div className="card-heading clearfix border-bottom mb-4">
+            <h3  className="card-title">Journal Access Requests List(seen by client only)</h3>
+          </div>
+          <div className="card-body">
+            <ul className="list-unstyled">
+              <li className="position-relative jour-req-list">
+                <div className="media">
+                  <div className="msg-img">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" />
+                  </div>
+                  <div className="media-body">
+                    <h5 className="mb-4">doctor 1 <span className="badge badge-primary mx-3">Pending</span></h5>
+                    
+                    
+                    <p>I need to see your journals</p>
+                  </div>
+                </div>
+                <div className="buttons-to-right">
+                  <a href="#" className="btn-gray mr-2"><i className="far fa-times-circle mr-2"></i> Reject</a>
+                  <a href="#" className="btn-gray"><i className="far fa-check-circle mr-2"></i> Approve</a>
+                </div>
+              </li>
 
-<section className="credit-card">
-		<div className="container">
-<h2 > Add New Journal</h2>
+              <li className="position-relative jour-req-list">
+                <div className="media">
+                  <div className="msg-img">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                  </div>
+                  <div className="media-body">
+                    <h5 className="mb-4">doctor 2 <span className="badge badge-success ml-3">Approved</span></h5>
+                    
+                    
+                    
+                    <p>I need to see your journals</p>
+                  </div>
+                </div>
+                <div className="buttons-to-right">
+                  <a href="#" className="btn-gray mr-2"><i className="far fa-times-circle mr-2"></i>Cancel</a>
+                </div>
+              </li>
 
-			<div className="card-holder">
-				<div className="card-box bg-news">
-					<div className="row">
-						<div className="col-lg-5">
-						<div class="img-box">
-								<img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid" />
-							</div>
-						</div>
-						<div className="col-lg-7 bigger">
+              <li className="position-relative jour-req-list">
+                <div className="media">
+                  <div className="msg-img">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                  </div>
+                  <div className="media-body">
+                    <h5 className="mb-4">doctor 3 <span className="badge badge-danger ml-3">Cancelled</span></h5>
+                    
+                    
+                    <p>I need to see your journals</p>
+                    
 
-							<form>
-								<div className="card-details">
-									<h3 className="title">Add New Journal</h3>
-									<div className="row">
-										<div className="form-group col-sm-7">
-											<div className="inner-addon right-addon">
-												<label for="date">Select Date</label>
-												<input id="date" type="date" className="form-control" placeholder="date"
-													aria-label="date" aria-describedby="basic-addon1" />
-											</div>
-										</div>
-                                        <hr/>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
-										<div className="form-group col-sm-12">
-											<div className="inner-addon right-addon">
-												<label for="time">Choose Time</label><br/>
-												<input type="time" />
+          </div>
+        </div>
 
-											</div>
-										</div>
-<hr/>
-
-                                        <div className="form-group col-sm-12">
-											<div className="inner-addon right-addon">
-												<label for="time">Choose Feeling</label>
-												<div>
-                                                <button className="btn journalbt btn-outline-success">Remorse</button>
-                                                <button className="btn journalbt btn-outline-success">Loneliness</button>
-                                                <button className="btn journalbt btn-outline-success">Anger</button>
-                                                <button className="btn journalbt btn-outline-success">Caring</button>
-                                                <button className="btn journalbt btn-outline-success">Happiness</button>
-                                                <button className="btn journalbt btn-outline-success">Depression</button>
-                                                <button className="btn journalbt btn-outline-success">Inadequate</button>
-												<button className="btn journalbt btn-outline-success">Fear</button>
-												<button className="btn journalbt btn-outline-success">Confusion</button>
-													
-
-												</div>
-
-
-											</div>
-										</div>
-<br></br>
-<hr/>
-                                        <div className="form-group col-sm-12">
-											<div className="inner-addon right-addon">
-												<label for="time">Choose Intensity</label>
-												<div>
-                                                <button className="btn journalbt btn-outline-success">Light</button>
-                                                <button className="btn journalbt btn-outline-success">Medium</button>
-                                                <button className="btn journalbt btn-outline-success">Strong</button>
-                                                
-													
-
-												</div>
-
-
-											</div>
-										</div>
-
-										<div className="form-group col-sm-12">
-											<button type="button"
-												className="btn btn-success btn-block proceed-btn">Add Journal
-											</button>
-										</div>
-									</div>
-								</div>
-							</form>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
 
 
 
@@ -179,16 +153,12 @@ return(
 
 
 
-
-
 </div>
+
+
 
 )
 
-
 }
 
-
-
-
-export default AddNewJournal;
+export default JournalAccessRequestsList;
