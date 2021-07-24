@@ -1,0 +1,186 @@
+openapi: 3.0.0
+info:
+  version: "1.0"
+  title: clients-list
+  description: name-list-for-react
+  contact:
+    name: Prabhakar Kumar
+    email: kumarprabhakar2121@gmail.com
+servers:
+  - url: https://localhost:44333/api/v1
+    description: production server
+  - url: https://{hostname}:{port}/stagingapi/v1
+    description: development server
+    variables:
+      hostname:
+        default: localhost
+      port:
+        default: "44333"
+tags:
+  - name: Clients
+    description: operations about client
+paths:
+  /clients:
+    summary: Operations aboutr client
+    description: Contains the list operation on client
+    get:
+      tags:
+        - clients
+      summary: Get all the client names
+      description: returns the list of all clients
+      operationId: getClients
+      parameters:
+        - name: sortBy
+          in: query
+          description: The Sort Order
+          schema:
+            type: string
+            enum:
+              - asc
+              - desc
+            default: asc
+      responses:
+        "200":
+          $ref: "#/components/responses/Success"
+        "4XX":
+          $ref: "#/components/responses/4XXResponse"
+        "5XX":
+          $ref: "#/components/responses/5XXResponse"
+        default:
+          description: Success
+    post:
+      tags:
+        - clients
+      summary: Add a new client
+      description: Add a new client and Returns the added client
+      operationId: addClient
+      responses:
+        "201":
+          $ref: "#/components/responses/Success"
+        "4XX":
+          $ref: "#/components/responses/4XXResponse"
+        "5XX":
+          $ref: "#/components/responses/5XXResponse"
+        default:
+          description: Success
+      requestBody:
+        description: The new client to add
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Client"
+      security:
+        - BearerAuthentication: []
+  /clients/{clientId}:
+    summary: operations about individual client
+    description: contains the list of operations on a single client
+    get:
+      tags:
+        - clients
+      summary: get a specific client
+      description: return the client details
+      operationId: getClient
+      parameters:
+        - name: clientId
+          in: path
+          description: The unique client id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/Success"
+        "4XX":
+          $ref: "#/components/responses/4XXResponse"
+        "5XX":
+          $ref: "#/components/responses/5XXResponse"
+    put:
+      tags:
+        - clients
+      summary: update a specific client
+      description: return the client details
+      operationId: updateClient
+      parameters:
+        - name: clientId
+          in: path
+          description: The unique client id
+          required: true
+          schema:
+            type: string
+      responses:
+        "201":
+          $ref: "#/components/responses/Success"
+        "4XX":
+          $ref: "#/components/responses/4XXResponse"
+        "5XX":
+          $ref: "#/components/responses/5XXResponse"
+      requestBody:
+        description: the client details to update
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Client"
+    delete:
+      tags:
+        - clients
+      summary: delete a specific client
+      description: remove client entry from a system
+      operationId: deleteClient
+      parameters:
+        - name: clientId
+          in: path
+          description: The unique client id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/Success"
+        "4XX":
+          $ref: "#/components/responses/4XXResponse"
+        "5XX":
+          $ref: "#/components/responses/5XXResponse"
+components:
+  schemas:
+    Client:
+      type: object
+      description: Represents a client entry
+      properties:
+        clientId:
+          type: number
+          description: Unique Id of the client
+        clientName:
+          type: string
+          description: Name of the client
+        clientEmail:
+          type: string
+          description: Email of the client
+
+      required:
+        - clientName
+        - clientEmail
+      example:
+        clientId: 1
+        clientName: John Doe
+        clientEmail: abcde@email.com
+  responses:
+    Success:
+      description: Successful
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Client"
+    4XXResponse:
+      description: Bad Request
+    5XXResponse:
+      description: Interval Server Error
+  securitySchemes:
+    BasicAuthentication:
+      type: http
+      scheme: basic
+    BearerAuthentication:
+      type: http
+      scheme: bearer
+security:
+  - BasicAuthentication: []
